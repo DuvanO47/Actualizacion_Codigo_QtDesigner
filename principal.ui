@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>471</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Redes Sensores</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="sensor_temperatura">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>sensor_temperatura</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sensor_presion">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: rgb(0, 170, 127);
+background-color: rgb(0, 170, 127);</string>
+    </property>
+    <property name="text">
+     <string>sensor_presion</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sensor_etiquetado">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-right-color: rgb(170, 0, 255);
+background-color: rgb(255, 0, 255);
+alternate-background-color: rgb(255, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string>sensor_etiquetado</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sensor_nivel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-top-color: rgb(255, 255, 0);
+background-color: rgb(255, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>sensor_nivel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grafica_temperatura">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>241</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images.qrc">:/Tratamiento_imagenes/images/fig_9.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grafica_etiquetado">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>460</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>grafica_etiquetado</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="Tabla">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>391</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Fecha</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hora</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>sensor nivel</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>sensor temperatura</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>sensor presion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>sensor etiquetado</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="BOTON_LED">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>440</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>BOTON_LED</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>471</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuForm">
+    <property name="title">
+     <string>Form</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuForm"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuWindow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/Tratamiento_imagenes/images/icono_1.png</normaloff>:/Tratamiento_imagenes/images/icono_1.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
